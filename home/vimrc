@@ -1,0 +1,17 @@
+syntax on
+color jellybeans
+set expandtab
+set smarttab
+set ts=2
+set hlsearch
+syntax enable
+set encoding=utf8
+set sw=2
+set modeline
+set hidden
+
+filetype on
+filetype plugin on
+filetype indent on
+
+autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=0

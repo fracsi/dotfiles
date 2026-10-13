@@ -1,0 +1,18 @@
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+[init]
+    defaultBranch = main
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
+[alias]
+    d = difftool
+[core]
+    autocrlf = input
+    excludesFile = ~/.gitignore
+[include]
+    path = ~/.gitconfig.local
