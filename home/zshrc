@@ -92,7 +92,7 @@ zstyle ':omz:plugins:fnm' use-on-cd yes
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
+ZSH_HIGHLIGHT_STYLES[comment]='fg=245'
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
