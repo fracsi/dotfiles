@@ -48,7 +48,7 @@ TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)
 # Oh My Zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   echo "Install Oh My Zsh"
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  run_cmd sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
 ZSH_CUSTOM=${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}
