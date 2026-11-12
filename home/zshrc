@@ -1,5 +1,6 @@
 ZSH_DISABLE_COMPFIX="true"
 FNM_PATH="$HOME/.local/share/fnm"
+
 if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
 fi
@@ -89,6 +90,7 @@ plugins=(git docker aws fnm gh npm screen zsh-autosuggestions zsh-interactive-cd
 
 zstyle ':omz:plugins:fnm' autostart yes
 zstyle ':omz:plugins:fnm' use-on-cd yes
+[[ $EUID -eq 0 ]] && export ZSH_CACHE_DIR="/tmp/oh-my-zsh-root-cache" && mkdir -p $ZSH_CACHE_DIR
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
